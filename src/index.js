@@ -6,6 +6,10 @@ const route = require('./routes');
 const app = express();
 const port = 3000;
 
+const db = require('./config/db')
+
+db.connect();
+
 app.use(express.urlencoded({
   extended:true
 }));
