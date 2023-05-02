@@ -3,7 +3,7 @@ const {mutipleMongooseToObject} = require('../../utill/mongoose');
 
 class SiteController {
  
-       async showhome(req, res,next) {
+       async showHome(req, res,next) {
             Courses.find({})
                 .then(courses => {
                     res.render('home', {
